@@ -21,7 +21,7 @@ const PHOTOS = [
   `${BASE}photos/photo8.jpg`,
 ]
 
-const TIGER_ICON = `${BASE}photos/tiger.png`
+const TIGER_ICON = `${BASE}photos/gcdstiger.png`
 
 const CURRENT_TEAM = [
   'Henry Santangelo',
