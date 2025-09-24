@@ -46,6 +46,7 @@ const FACULTY_TEAM = [
   'Leon Martinez',
   'Dr. Gregory Stein',
   'Regi Parron',
+  'Samantha Marciano',
 ]
 
 function Header({ currentView, onNavigate }) {
