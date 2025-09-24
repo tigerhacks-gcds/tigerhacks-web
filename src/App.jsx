@@ -21,6 +21,8 @@ const PHOTOS = [
   `${BASE}photos/photo8.jpg`,
 ]
 
+const TIGER_ICON = `${BASE}photos/tiger.png`
+
 const CURRENT_TEAM = [
   'Henry Santangelo',
   'Zachary Bostock',
@@ -58,7 +60,7 @@ function Header({ currentView, onNavigate }) {
     <header className="site-header">
       <div className="container header-inner">
         <div className="brand">
-          <span className="brand-emoji" aria-hidden>🐯</span>
+          <img className="brand-icon" src={TIGER_ICON} alt="TigerHacks" aria-hidden="true" />
           <span className="brand-title">TigerHacks</span>
           <span className="brand-subtitle">2025</span>
         </div>
