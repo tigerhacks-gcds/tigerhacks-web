@@ -1,0 +1,30 @@
+:root {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #0f172a;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; color: inherit; background: inherit; }
+
+h1 { font-size: 36px; line-height: 1.25; margin: 0; }
+h2 { font-size: 22px; margin: 0; }
+p { margin: 0; }
+
+button {
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: transparent;
+  color: inherit;
+}
+/* Higher contrast on hover */
+button:hover { border-color: currentColor; }
