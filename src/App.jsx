@@ -9,15 +9,16 @@ const VIEWS = {
   RESULTS: 'results',
 }
 
+const BASE = import.meta.env.BASE_URL || '/'
 const PHOTOS = [
-  '/photos/photo1.jpg',
-  '/photos/photo2.jpg',
-  '/photos/photo3.jpg',
-  '/photos/photo4.jpg',
-  '/photos/photo5.jpg',
-  '/photos/photo6.jpg',
-  '/photos/photo7.jpg',
-  '/photos/photo8.jpg',
+  `${BASE}photos/photo1.jpg`,
+  `${BASE}photos/photo2.jpg`,
+  `${BASE}photos/photo3.jpg`,
+  `${BASE}photos/photo4.jpg`,
+  `${BASE}photos/photo5.jpg`,
+  `${BASE}photos/photo6.jpg`,
+  `${BASE}photos/photo7.jpg`,
+  `${BASE}photos/photo8.jpg`,
 ]
 
 const CURRENT_TEAM = [
@@ -46,6 +47,13 @@ const FACULTY_TEAM = [
 ]
 
 function Header({ currentView, onNavigate }) {
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  const go = (view) => {
+    onNavigate(view)
+    setMobileOpen(false)
+  }
+
   return (
     <header className="site-header">
       <div className="container header-inner">
@@ -54,34 +62,46 @@ function Header({ currentView, onNavigate }) {
           <span className="brand-title">TigerHacks</span>
           <span className="brand-subtitle">2025</span>
         </div>
-        <nav className="nav">
+
+        <button
+          className="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((v) => !v)}
+        >
+          <span className="menu-bar" />
+          <span className="menu-bar" />
+          <span className="menu-bar" />
+        </button>
+
+        <nav className={`nav ${mobileOpen ? 'open' : ''}`}>
           <button
             className={`nav-link ${currentView === VIEWS.HOME ? 'active' : ''}`}
-            onClick={() => onNavigate(VIEWS.HOME)}
+            onClick={() => go(VIEWS.HOME)}
           >
             Home
           </button>
           <button
             className={`nav-link ${currentView === VIEWS.PRIOR ? 'active' : ''}`}
-            onClick={() => onNavigate(VIEWS.PRIOR)}
+            onClick={() => go(VIEWS.PRIOR)}
           >
             Prior Questions
           </button>
           <button
             className={`nav-link ${currentView === VIEWS.RESULTS ? 'active' : ''}`}
-            onClick={() => onNavigate(VIEWS.RESULTS)}
+            onClick={() => go(VIEWS.RESULTS)}
           >
             Results
           </button>
           <button
             className={`nav-link ${currentView === VIEWS.RULES ? 'active' : ''}`}
-            onClick={() => onNavigate(VIEWS.RULES)}
+            onClick={() => go(VIEWS.RULES)}
           >
             Rules
           </button>
           <button
             className={`nav-link cta-button ${currentView === VIEWS.REGISTER ? 'active' : ''}`}
-            onClick={() => onNavigate(VIEWS.REGISTER)}
+            onClick={() => go(VIEWS.REGISTER)}
           >
             Registration
           </button>
