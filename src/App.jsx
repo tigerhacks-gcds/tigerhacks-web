@@ -25,7 +25,7 @@ const TIGER_ICON = `${BASE}photos/gcdstiger.png`
 
 const CURRENT_TEAM = [
   'Henry Santangelo',
-  'Zachary Bostock',
+  'Zachry Bostock',
   'Charlie Moloney',
   'Irhan Iftikar',
   'Katie Benincasa',
@@ -287,7 +287,7 @@ function PriorQuestionsView() {
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2024 Questions</h2>
-          <p>2024 Questions to be released the day of the competition.</p>
+          <p>2024 Questions coming soon.</p>
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2023 Questions</h2>
