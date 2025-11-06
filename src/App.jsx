@@ -31,6 +31,7 @@ const CURRENT_TEAM = [
   'Katie Benincasa',
   'Julian Toub',
   'Asher Rosen',
+  'Oliver Servedio',
 ]
 
 const ALUMNI_TEAM = [
