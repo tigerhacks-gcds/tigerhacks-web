@@ -288,7 +288,11 @@ function PriorQuestionsView() {
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2024 Questions</h2>
-          <p>2024 Questions to be released the day of the competition.</p>
+          <p>
+            2024 questions can be accessed <a href="https://drive.google.com/file/d/1WFZtLQyyr2Vbg55KXSoFeQKb3Ac0P7q-/view?usp=sharing" target="_blank" rel="noreferrer">here</a>, and solutions can be accessed <a href="https://github.com/harrison-servedio/tigerhacks-2024/tree/main" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
+          </p>
+          <br />
+          <iframe src="https://drive.google.com/file/d/1WFZtLQyyr2Vbg55KXSoFeQKb3Ac0P7q-/preview" width="100%" height="340" frameBorder="0" allow="autoplay"></iframe>
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2023 Questions</h2>
