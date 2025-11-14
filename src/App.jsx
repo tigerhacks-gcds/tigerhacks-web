@@ -32,6 +32,8 @@ const CURRENT_TEAM = [
   'Julian Toub',
   'Asher Rosen',
   'Oliver Servedio',
+  'Mary Chickering',
+  'Oliver Davis',
 ]
 
 const ALUMNI_TEAM = [
