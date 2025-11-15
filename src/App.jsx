@@ -159,10 +159,10 @@ function HomeView({ onRegister }) {
         <h2>Schedule</h2>
         <ul className="schedule-list">
           <li><span className="time">1:00 – 1:15</span><span className="desc">Arrival</span></li>
-          <li><span className="time">1:20 – 1:45</span><span className="desc">Welcome Presentation + Competition Overview</span></li>
-          <li><span className="time">1:50 – 2:15</span><span className="desc">Students Set up + Lunchtime</span></li>
-          <li><span className="time">2:20 – 5:20</span><span className="desc">Competition</span></li>
-          <li><span className="time">5:35</span><span className="desc">Awards and Dismissal</span></li>
+          <li><span className="time">1:20 – 1:35</span><span className="desc">Welcome Presentation + Competition Overview</span></li>
+          <li><span className="time">1:45 – 2:05</span><span className="desc">Students Set up + Lunchtime</span></li>
+          <li><span className="time">2:05 – 5:15</span><span className="desc">Competition</span></li>
+          <li><span className="time">5:25</span><span className="desc">Awards and Dismissal</span></li>
         </ul>
       </section>
 
