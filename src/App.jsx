@@ -335,6 +335,56 @@ const RESULTS_2025 = [
   { team: 'Westhill Novice A', username: 'runtherace073', score: 1, time: 73 },
 ]
 
+const RESULTS_2024 = [
+  { team: 'Hack Tuah', member1: 'Jaymin Ding', member2: 'Rhys de Haan', member3: 'Xavier Perkins' },
+  { team: 'Brunswick Ninja', member1: 'Vikram Sarkar', member2: 'Jack Whitney-Epstein', member3: 'Jesse Chung' },
+  { team: 'Vikings Varsity A', member1: 'Nikita Haitsiukevich', member2: 'Katelin Zhao', member3: 'Charles Bordon' },
+  { team: '♻️', member1: 'Julian Kizner', member2: 'Wilson Rothschild', member3: 'N/A' },
+  { team: 'The Goon Squad', member1: 'Charles Iwanski', member2: 'Xindi Liu', member3: 'Arav Ramaswamy' },
+  { team: 'Heat Hollows', member1: 'Arav Chand', member2: 'Eric Matsuno', member3: 'Aparthib Anubhob' },
+  { team: '🏰🐴♗👸🤴♗🐴🏰', member1: 'Arjan Kochar', member2: 'Ephraim Gilrain-Lennon', member3: 'N/A' },
+  { team: 'Westhill Varsity C', member1: 'Sahil Salihnur', member2: 'Saksham Behl', member3: 'Kartik Nayyar' },
+  { team: '😩', member1: 'Oliver Samardzija', member2: 'Bobby Somaya', member3: 'Felix DeSantis' },
+  { team: 'Westhill Varsity B', member1: 'Aidan Mulcahey', member2: 'Daniel Tuma', member3: 'Rachit Jha' },
+  { team: 'Los Pollos Hermanos', member1: 'Nicholas Wei', member2: 'Joshua Shin', member3: 'Eric Kim' },
+  { team: 'RHS Team B', member1: 'Sebastian Utomo', member2: 'Jayin Palicha', member3: 'Brandon Lebun-Luo' },
+  { team: 'RHS Team A', member1: 'Jacob Kalafus', member2: 'Henry Frates', member3: 'Grant Thorburn' },
+  { team: 'Crew Coders', member1: 'George Kapp', member2: 'Charlie Sulkowski', member3: 'Justin Guo' },
+  { team: 'The Doodlers', member1: 'Kam Wing Lo', member2: 'Masood Khwaja', member3: 'Vihan Bansal' },
+  { team: '📎', member1: 'Jack Clavelli', member2: 'Eric Millar', member3: 'Matheo Picon' },
+  { team: 'Code Queens', member1: 'Ellie Podoshev', member2: 'Laila Galal', member3: 'Anya Nadel' },
+  { team: 'The Hawks', member1: 'Maria Taveras', member2: 'Banghua Pan', member3: 'Siksha Kohar' },
+  { team: 'Westhill Varsity D', member1: 'Faisal Naziri', member2: 'Keeran Giritharan', member3: 'Christian Thomas' },
+  { team: '💅', member1: 'Lily Rothschild', member2: 'Peikang Hu', member3: 'Matty Shulman' },
+  { team: 'The iPad kids', member1: 'Grant Millan', member2: 'William Schaible', member3: 'N/A' },
+  { team: 'Tech Divas', member1: 'Ambika Jha', member2: 'Harriet Hedvat', member3: 'Avery Li' },
+]
+
+const RESULTS_2023 = [
+  { team: 'Hack Tuah', member1: 'Jaymin Ding', member2: 'Rhys de Haan', member3: 'Xavier Perkins' },
+  { team: 'Brunswick Ninja', member1: 'Vikram Sarkar', member2: 'Jack Whitney-Epstein', member3: 'Jesse Chung' },
+  { team: 'Vikings Varsity A', member1: 'Nikita Haitsiukevich', member2: 'Katelin Zhao', member3: 'Charles Bordon' },
+  { team: '♻️', member1: 'Julian Kizner', member2: 'Wilson Rothschild', member3: 'N/A' },
+  { team: 'The Goon Squad', member1: 'Charles Iwanski', member2: 'Xindi Liu', member3: 'Arav Ramaswamy' },
+  { team: 'Heat Hollows', member1: 'Arav Chand', member2: 'Eric Matsuno', member3: 'Aparthib Anubhob' },
+  { team: '🏰🐴♗👸🤴♗🐴🏰', member1: 'Arjan Kochar', member2: 'Ephraim Gilrain-Lennon', member3: 'N/A' },
+  { team: 'Westhill Varsity C', member1: 'Sahil Salihnur', member2: 'Saksham Behl', member3: 'Kartik Nayyar' },
+  { team: '😩', member1: 'Oliver Samardzija', member2: 'Bobby Somaya', member3: 'Felix DeSantis' },
+  { team: 'Westhill Varsity B', member1: 'Aidan Mulcahey', member2: 'Daniel Tuma', member3: 'Rachit Jha' },
+  { team: 'Los Pollos Hermanos', member1: 'Nicholas Wei', member2: 'Joshua Shin', member3: 'Eric Kim' },
+  { team: 'RHS Team B', member1: 'Sebastian Utomo', member2: 'Jayin Palicha', member3: 'Brandon Lebun-Luo' },
+  { team: 'RHS Team A', member1: 'Jacob Kalafus', member2: 'Henry Frates', member3: 'Grant Thorburn' },
+  { team: 'Crew Coders', member1: 'George Kapp', member2: 'Charlie Sulkowski', member3: 'Justin Guo' },
+  { team: 'The Doodlers', member1: 'Kam Wing Lo', member2: 'Masood Khwaja', member3: 'Vihan Bansal' },
+  { team: '📎', member1: 'Jack Clavelli', member2: 'Eric Millar', member3: 'Matheo Picon' },
+  { team: 'Code Queens', member1: 'Ellie Podoshev', member2: 'Laila Galal', member3: 'Anya Nadel' },
+  { team: 'The Hawks', member1: 'Maria Taveras', member2: 'Banghua Pan', member3: 'Siksha Kohar' },
+  { team: 'Westhill Varsity D', member1: 'Faisal Naziri', member2: 'Keeran Giritharan', member3: 'Christian Thomas' },
+  { team: '💅', member1: 'Lily Rothschild', member2: 'Peikang Hu', member3: 'Matty Shulman' },
+  { team: 'The iPad kids', member1: 'Grant Millan', member2: 'William Schaible', member3: 'N/A' },
+  { team: 'Tech Divas', member1: 'Ambika Jha', member2: 'Harriet Hedvat', member3: 'Avery Li' },
+]
+
 function ResultsView() {
   return (
     <main className="container main">
@@ -369,15 +419,57 @@ function ResultsView() {
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2024 Results</h2>
-          <p>Results from the 2024 contest can be seen below, and also can be accessed <a href="https://drive.google.com/file/d/1gPGqUwBc7DLiN1uHYa7xjU-wHunFae6U/view" target="_blank" rel="noreferrer">here</a>.</p>
-          <br />
-          <iframe src="https://drive.google.com/file/d/1gPGqUwBc7DLiN1uHYa7xjU-wHunFae6U/preview" width="640" height="480" allow="autoplay"></iframe>
+          <div className="results-table-wrapper">
+            <table className="results-table results-table-members">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Team Name</th>
+                  <th>Member 1 Name</th>
+                  <th>Member 2 Name</th>
+                  <th>Member 3 Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                {RESULTS_2024.map((result, index) => (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{result.team}</td>
+                    <td>{result.member1}</td>
+                    <td>{result.member2}</td>
+                    <td>{result.member3}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2023 Results</h2>
-          <p>Results from the 2023 contest can be seen below, and also can be accessed <a href="https://drive.google.com/file/d/1WLzv5odA55kuEzCtojmYI-fJVrxQ-nxp/view" target="_blank" rel="noreferrer">here</a>.</p>
-          <br />
-          <iframe src="https://drive.google.com/file/d/1WLzv5odA55kuEzCtojmYI-fJVrxQ-nxp/preview" width="100%" height="340" frameBorder="0" allow="autoplay"></iframe>
+          <div className="results-table-wrapper">
+            <table className="results-table results-table-members">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Team Name</th>
+                  <th>Member 1 Name</th>
+                  <th>Member 2 Name</th>
+                  <th>Member 3 Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                {RESULTS_2023.map((result, index) => (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{result.team}</td>
+                    <td>{result.member1}</td>
+                    <td>{result.member2}</td>
+                    <td>{result.member3}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>

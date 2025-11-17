@@ -241,6 +241,14 @@
   font-weight: 600;
 }
 
+.results-table-members th:nth-child(4),
+.results-table-members td:nth-child(4),
+.results-table-members th:nth-child(5),
+.results-table-members td:nth-child(5) {
+  text-align: left;
+  font-weight: normal;
+}
+
 @media (max-width: 640px) {
   .results-table {
     font-size: 13px;
