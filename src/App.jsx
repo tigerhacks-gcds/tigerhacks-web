@@ -66,7 +66,7 @@ function Header({ currentView, onNavigate }) {
         <div className="brand">
           <img className="brand-icon" src={TIGER_ICON} alt="TigerHacks" aria-hidden="true" />
           <span className="brand-title">TigerHacks</span>
-          <span className="brand-subtitle">2025</span>
+          <span className="brand-subtitle">2026</span>
         </div>
 
         <button
@@ -122,13 +122,13 @@ function HomeView({ onRegister }) {
     <main className="container main">
       <section className="hero">
         <h1>
-          TigerHacks <span className="fun-accent">2025</span>
+          TigerHacks <span className="fun-accent">2026</span>
         </h1>
         <p className="tagline">A high-school coding competition, by high-schoolers.</p>
         <div className="event-meta">
           <div className="meta-item">
             <span className="meta-label">Date</span>
-            <span className="meta-value">Saturday, November 15, 2025</span>
+            <span className="meta-value">TBD</span>
           </div>
           <div className="meta-item">
             <span className="meta-label">Location</span>
@@ -472,7 +472,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
-        <span>TigerHacks {new Date().getFullYear()}</span>
+        <span>TigerHacks 2026</span>
         <span>
           Built with React + Vite
         </span>
