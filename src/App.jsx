@@ -286,28 +286,54 @@ function PriorQuestionsView() {
         <h1>Prior Questions</h1>
         <div className="about" style={{ marginTop: 12 }}>
           <h2>2025 Questions</h2>
-          <p>2025 Questions to be released the day of the competition.</p>
+          <p>
+            2025 questions can be accessed <a href={`${BASE}pset2025.pdf`} target="_blank" rel="noreferrer">here</a>, and solutions can be accessed <a href="https://github.com/Henry-Santa/tigerhacks" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
+          </p>
+          <br />
+          <iframe src={`${BASE}pset2025.pdf`} width="100%" height="500" frameBorder="0" allow="autoplay"></iframe>
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2024 Questions</h2>
           <p>
-            2024 questions can be accessed <a href="https://drive.google.com/file/d/1WFZtLQyyr2Vbg55KXSoFeQKb3Ac0P7q-/view?usp=sharing" target="_blank" rel="noreferrer">here</a>, and solutions can be accessed <a href="https://github.com/harrison-servedio/tigerhacks-2024/tree/main" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
+            2024 questions can be accessed <a href={`${BASE}pset2024.pdf`} target="_blank" rel="noreferrer">here</a>, and solutions can be accessed <a href="https://github.com/harrison-servedio/tigerhacks-2024/tree/main" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
           </p>
           <br />
-          <iframe src="https://drive.google.com/file/d/1WFZtLQyyr2Vbg55KXSoFeQKb3Ac0P7q-/preview" width="100%" height="340" frameBorder="0" allow="autoplay"></iframe>
+          <iframe src={`${BASE}pset2024.pdf`} width="100%" height="500" frameBorder="0" allow="autoplay"></iframe>
         </div>
         <div className="about" style={{ marginTop: 16 }}>
           <h2>2023 Questions</h2>
           <p>
-            2023 questions can be accessed <a href="https://docs.google.com/document/d/e/2PACX-1vRvXvBmglsL9MWHUd1gYMebHaFZHnOEqQOykwbCblvrCxWxE84gmGHM9YTmlSKzerjCm_XGtop0vijX/pub" target="_blank" rel="noreferrer">here</a>, and Python solutions can be accessed <a href="https://github.com/harrison-servedio/tigerHacks-2023" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
+            2023 questions can be accessed <a href={`${BASE}pset2023.pdf`} target="_blank" rel="noreferrer">here</a>, and Python solutions can be accessed <a href="https://github.com/harrison-servedio/tigerHacks-2023" target="_blank" rel="noreferrer">here</a>. The questions are also embedded below.
           </p>
           <br />
-          <iframe src="https://drive.google.com/file/d/1SxTn0NU72eFyxt7D9D_2kufV8prymmUJ/preview" width="100%" height="340" frameBorder="0" allow="autoplay"></iframe>
+          <iframe src={`${BASE}pset2023.pdf`} width="100%" height="500" frameBorder="0" allow="autoplay"></iframe>
         </div>
       </section>
     </main>
   )
 }
+
+const RESULTS_2025 = [
+  { team: 'HHH eldroW idibikS', username: 'aravchando', score: 9, time: 168 },
+  { team: 'HHH One Chip', username: 'c_lamkin37', score: 8, time: 179.33 },
+  { team: 'HHH - Los Pollos Hermanos', username: 'joshuadanielshin', score: 8, time: 179.4 },
+  { team: 'Dragons A', username: 'enqiao2009', score: 7, time: 140 },
+  { team: 'HHH LeTeam', username: 'vihan_bansal', score: 7, time: 160 },
+  { team: '⚙️', username: 'julianmkizner', score: 7, time: 173 },
+  { team: 'HHH JAC', username: 'justinmoss0803', score: 7, time: 173 },
+  { team: 'Westhill Vikings Varsity A', username: 'sakshambehl4', score: 6, time: 115 },
+  { team: 'Bruins Ninjas', username: 'ssheppard', score: 6, time: 124 },
+  { team: 'Dragons B', username: 'brucea28', score: 6, time: 175.75 },
+  { team: 'Westhill Varsity B', username: 'vihaan_goyal1512', score: 5, time: 96 },
+  { team: 'HHH Kars 4 Kids', username: 'ajinest6', score: 5, time: 114 },
+  { team: 'HHH |\\|@$', username: 'navya27dhanikon1', score: 5, time: 164 },
+  { team: "St. Luke's 1", username: 'rothschildw29', score: 5, time: 171 },
+  { team: 'WickHack', username: 'mlanson', score: 5, time: 172 },
+  { team: "St. Luke's 2", username: 'desantisf26', score: 5, time: 177 },
+  { team: 'Westhill Novice B', username: 'marcusajakes', score: 4, time: 97 },
+  { team: "St. Luke's 3", username: 'frosth27', score: 4, time: 121 },
+  { team: 'Westhill Novice A', username: 'runtherace073', score: 1, time: 73 },
+]
 
 function ResultsView() {
   return (
@@ -315,6 +341,33 @@ function ResultsView() {
       <section>
         <h1>Results</h1>
         <div className="about" style={{ marginTop: 12 }}>
+          <h2>2025 Results</h2>
+          <div className="results-table-wrapper">
+            <table className="results-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Team</th>
+                  <th>Username</th>
+                  <th>Score</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                {RESULTS_2025.map((result, index) => (
+                  <tr key={index}>
+                    <td>{index + 1}</td>
+                    <td>{result.team}</td>
+                    <td>{result.username}</td>
+                    <td>{result.score}</td>
+                    <td>{result.time}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="about" style={{ marginTop: 16 }}>
           <h2>2024 Results</h2>
           <p>Results from the 2024 contest can be seen below, and also can be accessed <a href="https://drive.google.com/file/d/1gPGqUwBc7DLiN1uHYa7xjU-wHunFae6U/view" target="_blank" rel="noreferrer">here</a>.</p>
           <br />

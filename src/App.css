@@ -181,6 +181,76 @@
 .rules-list li.no-ai { border-color: #ff3d71; box-shadow: 0 0 0 3px rgba(255,61,113,0.08) inset; }
 .rules-note { text-align: center; opacity: 0.8; margin-top: 10px; }
 
+/* Results Table */
+.results-table-wrapper {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #ffffff;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.results-table thead {
+  background: rgba(0,0,0,0.04);
+}
+
+.results-table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: rgba(0,0,0,0.8);
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.results-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.results-table tbody tr:hover {
+  background: rgba(0,0,0,0.02);
+}
+
+.results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.results-table th:first-child,
+.results-table td:first-child {
+  width: 60px;
+  text-align: center;
+}
+
+.results-table th:nth-child(4),
+.results-table td:nth-child(4),
+.results-table th:nth-child(5),
+.results-table td:nth-child(5) {
+  text-align: right;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .results-table {
+    font-size: 13px;
+  }
+  .results-table th,
+  .results-table td {
+    padding: 6px 8px;
+  }
+}
+
 /* Footer */
 .site-footer { border-top: 1px solid rgba(0,0,0,0.08); background: #ffffff; }
 .footer-inner { display: flex; gap: 12px; justify-content: space-between; align-items: center; height: 64px; }
