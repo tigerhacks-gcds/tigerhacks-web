@@ -24,16 +24,9 @@ const PHOTOS = [
 const TIGER_ICON = `${BASE}photos/gcdstiger.png`
 
 const CURRENT_TEAM = [
-  'Henry Santangelo',
-  'Zachry Bostock',
-  'Charlie Moloney',
-  'Irhan Iftikar',
-  'Katie Benincasa',
-  'Julian Toub',
-  'Asher Rosen',
   'Oliver Servedio',
   'Mary Chickering',
-  'Oliver Davis',
+  'Oliver Davis'
 ]
 
 const ALUMNI_TEAM = [
@@ -41,6 +34,13 @@ const ALUMNI_TEAM = [
   'Abraham Milgram',
   'Harrison Servedio',
   'Andy Pauley',
+  'Henry Santangelo',
+  'Julian Toub',
+  'Katie Benicasa',
+  'Asher Rosen',
+  'Irhan Iftikar',
+  'Zachary Bostock',
+  'Charlie Mononey'
 ]
 
 const FACULTY_TEAM = [
