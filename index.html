@@ -1,14 +1,574 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./photos/gcdstiger.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./photos/gcdstiger.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TigerHacks 2025</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TigerHacks 2026 | High School Coding Competition at Greenwich Country Day School</title>
+<meta name="description" content="TigerHacks is a student-run high-school coding competition at Greenwich Country Day School (GCDS) in Greenwich, CT. TigerHacks 2026 is murder-mystery themed and led by Mary Chickering, Oliver Servedio, and Oliver Davis.">
+<link rel="canonical" href="https://tiger-hacks.net/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="TigerHacks, Greenwich Country Day School">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TigerHacks">
+<meta property="og:title" content="TigerHacks 2026 | High School Coding Competition at Greenwich Country Day School">
+<meta property="og:description" content="TigerHacks is a student-run high-school coding competition at Greenwich Country Day School (GCDS) in Greenwich, CT. TigerHacks 2026 is murder-mystery themed and led by Mary Chickering, Oliver Servedio, and Oliver Davis.">
+<meta property="og:url" content="https://tiger-hacks.net/">
+<meta property="og:image" content="https://tiger-hacks.net/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TigerHacks 2026 — a high-school coding competition at Greenwich Country Day School">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TigerHacks 2026 | High School Coding Competition at Greenwich Country Day School">
+<meta name="twitter:description" content="TigerHacks is a student-run high-school coding competition at Greenwich Country Day School (GCDS) in Greenwich, CT. TigerHacks 2026 is murder-mystery themed and led by Mary Chickering, Oliver Servedio, and Oliver Davis.">
+<meta name="twitter:image" content="https://tiger-hacks.net/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://tiger-hacks.net/#org",
+   "name": "TigerHacks",
+   "alternateName": [
+    "Tiger Hacks",
+    "TigerHacks GCDS",
+    "GCDS TigerHacks"
+   ],
+   "url": "https://tiger-hacks.net/",
+   "logo": "https://tiger-hacks.net/assets/img/tiger-512.png",
+   "email": "tigerhacks@gcds.net",
+   "description": "TigerHacks is a student-led high-school computer science and coding competition hosted at Greenwich Country Day School (GCDS) in Greenwich, Connecticut.",
+   "parentOrganization": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School",
+    "alternateName": "GCDS",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "257 Stanwich Road",
+     "addressLocality": "Greenwich",
+     "addressRegion": "CT",
+     "postalCode": "06830",
+     "addressCountry": "US"
+    }
+   },
+   "member": [
+    {
+     "@id": "https://tiger-hacks.net/team/#mary-chickering"
+    },
+    {
+     "@id": "https://tiger-hacks.net/team/#oliver-servedio"
+    },
+    {
+     "@id": "https://tiger-hacks.net/team/#oliver-davis"
+    },
+    {
+     "@type": "Person",
+     "name": "Gordie Campbell",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Doug Melilo",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Leon Martinez",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Dr. Gregory Stein",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Regi Parron",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Samantha Marciano",
+     "jobTitle": "Faculty"
+    }
+   ],
+   "alumni": [
+    {
+     "@type": "Person",
+     "name": "Imran Iftikar"
+    },
+    {
+     "@type": "Person",
+     "name": "Abraham Milgram"
+    },
+    {
+     "@type": "Person",
+     "name": "Harrison Servedio"
+    },
+    {
+     "@type": "Person",
+     "name": "Andy Pauley"
+    },
+    {
+     "@type": "Person",
+     "name": "Henry Santangelo"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Toub"
+    },
+    {
+     "@type": "Person",
+     "name": "Katie Benicasa"
+    },
+    {
+     "@type": "Person",
+     "name": "Asher Rosen"
+    },
+    {
+     "@type": "Person",
+     "name": "Irhan Iftikar"
+    },
+    {
+     "@type": "Person",
+     "name": "Zachary Bostock"
+    },
+    {
+     "@type": "Person",
+     "name": "Charlie Mononey"
+    }
+   ],
+   "sameAs": [
+    "https://github.com/Henry-Santa/tigerhacks",
+    "https://github.com/harrison-servedio/tigerhacks-2024",
+    "https://github.com/harrison-servedio/tigerHacks-2023"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#mary-chickering",
+   "name": "Mary Chickering",
+   "url": "https://tiger-hacks.net/team/#mary-chickering",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Mary Chickering is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/mary-chickering.jpg",
+    "width": 1600,
+    "height": 1600,
+    "caption": "Mary Chickering, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#oliver-servedio",
+   "name": "Oliver Servedio",
+   "url": "https://tiger-hacks.net/team/#oliver-servedio",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Oliver Servedio is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/oliver-servedio.jpg",
+    "width": 500,
+    "height": 500,
+    "caption": "Oliver Servedio, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#oliver-davis",
+   "name": "Oliver Davis",
+   "url": "https://tiger-hacks.net/team/#oliver-davis",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Oliver Davis is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/oliver-davis.jpg",
+    "width": 501,
+    "height": 501,
+    "caption": "Oliver Davis, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://tiger-hacks.net/#website",
+   "url": "https://tiger-hacks.net/",
+   "name": "TigerHacks",
+   "publisher": {
+    "@id": "https://tiger-hacks.net/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "When is TigerHacks 2026?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The date for TigerHacks 2026 has not been announced yet. It will be posted on this page as soon as it is confirmed."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where is the competition held?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "TigerHacks takes place at 257 Stanwich Road, Greenwich, CT 06830, hosted by Greenwich Country Day School."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which programming languages can we use?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Submissions and grading run on HackerRank. Accepted languages are C++, Java, and Python."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is the theme for TigerHacks 2026?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "TigerHacks 2026 is murder-mystery themed. Expect a case to crack, clues to follow, and a culprit to unmask."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What resources are allowed during the competition?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Official language documentation and general tutorial sites are permitted. Q&amp;A forums such as StackOverflow are not, and no outside assistance is allowed from anyone not authorized to help — including other teams and chaperones."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is the competition scored?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Example input/output cases are provided, but grading uses hidden tests. A solution must pass all tests to count — there is no partial credit — and output must match exactly, including formatting, whitespace, and newlines. Ties are broken by the time taken to solve problems."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many laptops can a team bring?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "One laptop per team."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do we contact the organizers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Email the TigerHacks team at <a href=\"mailto:tigerhacks@gcds.net\">tigerhacks@gcds.net</a>."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How can we prepare?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Work through the <a href=\"https://tiger-hacks.net/problems/\">problem sets from 2023, 2024, and 2025</a> — solutions for each year are linked alongside them."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./" aria-label="TigerHacks home">
+      <span class="brand__mark"><img src="assets/img/tiger-192.png" alt="" width="30" height="30"></span>
+      <span class="brand__name">TigerHacks</span>
+      <span class="brand__year">2026</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list"><li><a class="nav__link" href="./" aria-current="page">Home</a></li><li><a class="nav__link" href="problems/">Past Problems</a></li><li><a class="nav__link" href="results/">Results</a></li><li><a class="nav__link" href="rules/">Rules</a></li><li><a class="nav__link" href="team/">The Team</a></li></ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="register/"><span>Register</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <ul class="mobile-menu__list"><li><a class="mobile-menu__link" href="./" aria-current="page"><small>01</small>Home</a></li><li><a class="mobile-menu__link" href="problems/"><small>02</small>Past Problems</a></li><li><a class="mobile-menu__link" href="results/"><small>03</small>Results</a></li><li><a class="mobile-menu__link" href="rules/"><small>04</small>Rules</a></li><li><a class="mobile-menu__link" href="team/"><small>05</small>The Team</a></li><li><a class="mobile-menu__link" href="register/"><small>06</small>Register</a></li></ul>
+  <div class="mobile-menu__foot">
+    <span>TigerHacks 2026 · Greenwich Country Day School</span>
+    <span>257 Stanwich Road, Greenwich, CT 06830</span>
+  </div>
+</div>
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__grid"></div>
+    <div class="hero__light"></div>
+    <img class="hero__tiger" src="assets/img/tiger-512.png" alt="" width="512" height="512">
+  </div>
+  <div class="container hero__inner">
+    <div>
+      <p class="eyebrow hero__kicker" data-scramble>Case file 2026 · The murder-mystery edition</p>
+      <h1 class="hero__title" id="hero-title">
+        <span class="line"><span>TigerHacks</span></span>
+        <span class="line"><span class="year">2026</span></span>
+      </h1>
+      <p class="hero__tagline">A high-school coding competition, <strong class="nowrap">by high-schoolers.</strong></p>
+      <p class="hero__theme"><span class="hero__theme-dot" aria-hidden="true"></span>2026 theme: <strong>Murder mystery</strong></p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="register/"><span>Register now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="problems/"><span>Study past problems</span></a>
+      </div>
+      <div class="hero__meta">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg><span>Date: TBD</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>257 Stanwich Road, Greenwich, CT 06830</span></div>
+      </div>
+    </div>
+
+    <aside class="case-card" aria-label="Competition summary" data-reveal style="--d:.3s">
+      <div class="case-card__head">
+        <span class="case-card__id">Case No. <strong>TH-2026</strong></span>
+        <span class="stamp">Open case</span>
+      </div>
+      <dl class="case-card__rows">
+        <div class="case-card__row"><dt>Theme</dt><dd class="bad">Murder mystery</dd></div>
+        <div class="case-card__row"><dt>Date</dt><dd class="redacted">To be announced</dd></div>
+        <div class="case-card__row"><dt>Scene</dt><dd>257 Stanwich Road, Greenwich, CT 06830</dd></div>
+        <div class="case-card__row"><dt>Format</dt><dd>Team coding competition · one laptop per team</dd></div>
+        <div class="case-card__row"><dt>Weapons</dt><dd>C++ · Java · Python</dd></div>
+      </dl>
+      <div class="terminal" role="img" aria-label="Case log" data-terminal='[{"prompt": true, "text": "open case --id tigerhacks-2026"}, {"text": "> location ....... Greenwich, CT"}, {"text": "> languages ...... C++ | Java | Python"}, {"text": "> grader ......... HackerRank, hidden tests"}, {"cls": "warn", "text": "> theme .......... MURDER MYSTERY"}, {"cls": "ok", "text": "> status ......... recruiting teams"}]'>$ open case --id tigerhacks-2026<br>&gt; location ....... Greenwich, CT<br>&gt; languages ...... C++ | Java | Python<br>&gt; grader ......... HackerRank, hidden tests<br>&gt; theme .......... MURDER MYSTERY<br>&gt; status ......... recruiting teams</div>
+    </aside>
+  </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to about">Scroll</a>
+</section>
+
+<div class="tape-wrap" aria-hidden="true">
+  <div class="tape tape--a"><div class="tape__track" data-marquee><span>TigerHacks 2026</span><span>Do not cross</span><span>Case open</span><span>Murder mystery</span><span>TigerHacks 2026</span><span>Do not cross</span><span>Case open</span><span>Murder mystery</span></div></div>
+  <div class="tape tape--b"><div class="tape__track" data-marquee><span>C++ · Java · Python</span><span>Hidden test cases</span><span>No partial credit</span><span>Exact output only</span><span>C++ · Java · Python</span><span>Hidden test cases</span><span>No partial credit</span><span>Exact output only</span></div></div>
+</div>
+
+<section class="section section--paper" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="brief">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow" data-scramble>The brief</span>
+        <h2 class="display h2" id="about-title" data-reveal>Built by students who <em>love</em> to compete.</h2>
+      </div>
+      <div class="brief__text" data-reveal style="--d:.1s">
+        <p>Having been fortunate to participate in coding competitions locally and internationally, we experienced the power of community in code. But we noticed something missing: a local platform for schools to engage in computer science together. So we built one.</p>
+        <p>TigerHacks brings students from multiple schools together to celebrate innovation, problem‑solving, and creativity—through a friendly coding competition designed by high‑schoolers, for high‑schoolers.</p>
+        <span class="brief__sig">The TigerHacks team · Greenwich Country Day School</span>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat" data-reveal><div class="stat__num"><span data-count="3">3</span></div><div class="stat__label">Competitions held</div></div>
+      <div class="stat" data-reveal style="--d:.08s"><div class="stat__num"><span data-count="55">55</span></div><div class="stat__label">Teams have competed</div></div>
+      <div class="stat" data-reveal style="--d:.16s"><div class="stat__num"><span data-count="3">3</span></div><div class="stat__label">Languages: C++, Java, Python</div></div>
+      <div class="stat" data-reveal style="--d:.24s"><div class="stat__num"><span data-count="190">190</span><sup>min</sup></div><div class="stat__label">Of head-to-head coding</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="format" aria-labelledby="format-title">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div style="display:grid;gap:20px">
+        <span class="eyebrow" data-scramble>How it works</span>
+        <h2 class="display h2" id="format-title" data-reveal>Read the evidence. <em>Crack the case.</em></h2>
+      </div>
+      <p class="lead" data-reveal style="--d:.1s">Teams race the clock to solve a set of algorithmic problems. Every submission is judged automatically against hidden tests — only complete, exact solutions count.</p>
+    </div>
+    <div class="cards cards--3">
+      <article class="card" data-reveal>
+        <span class="card__num">01</span>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 4l-4 16"/></svg></div>
+        <h3>Graded on HackerRank</h3>
+        <p>Submit solutions in your language of choice. Grading runs automatically.</p>
+        <div class="chips"><span class="chip">C++</span><span class="chip">Java</span><span class="chip">Python</span></div>
+      </article>
+      <article class="card" data-reveal style="--d:.08s">
+        <span class="card__num">02</span>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7 15h10"/></svg></div>
+        <h3>Hidden tests, no partial credit</h3>
+        <p>Example I/O is provided, but you must pass every hidden test — and match the output exactly, whitespace and newlines included.</p>
+      </article>
+      <article class="card" data-reveal style="--d:.16s">
+        <span class="card__num">03</span>
+        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Speed breaks ties</h3>
+        <p>When scores are level, the time taken to solve problems decides the ranking. Manage your time carefully.</p>
+      </article>
+    </div>
+    <p style="margin-top:32px" data-reveal><a class="link-arrow" href="rules/">Read the full rules <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="section" id="schedule" aria-labelledby="schedule-title" style="padding-top:0">
+  <div class="container timeline-wrap">
+    <div class="section-head" style="margin-bottom:0">
+      <span class="eyebrow" data-scramble>Timeline of events</span>
+      <h2 class="display h2" id="schedule-title" data-reveal>The day, <em>minute by minute.</em></h2>
+      <p class="lead" data-reveal style="--d:.1s">One afternoon. Five acts. Here is how competition day unfolds.</p>
+    </div>
+    <div>
+      <div class="timeline">
+        <span class="timeline__progress" aria-hidden="true"></span>
+        <ol>
+        <li class="" data-reveal><time>1:00 – 1:15</time><span class="dur">15 min</span><h3>Arrival</h3></li><li class="" data-reveal><time>1:20 – 1:35</time><span class="dur">15 min</span><h3>Welcome Presentation + Competition Overview</h3></li><li class="" data-reveal><time>1:45 – 2:05</time><span class="dur">20 min</span><h3>Students Set up + Lunchtime</h3></li><li class="is-main" data-reveal><time>2:05 – 5:15</time><span class="dur">3 hr 10 min</span><h3>Competition</h3></li><li class="" data-reveal><time>5:25</time><h3>Awards and Dismissal</h3></li>
+        </ol>
+      </div>
+      <p class="timeline-note">All times are PM, Eastern Time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" id="photos" aria-labelledby="photos-title" style="padding-top:0">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div style="display:grid;gap:20px">
+        <span class="eyebrow" data-scramble>Evidence board</span>
+        <h2 class="display h2" id="photos-title" data-reveal>Scenes from <em>past years.</em></h2>
+      </div>
+      <p class="lead" data-reveal style="--d:.1s">Students from schools across Connecticut and New York have competed at TigerHacks. Select a photo to enlarge it.</p>
+    </div>
+    <div class="gallery">
+      <a class="exhibit exhibit--wide" href="assets/img/photos/photo3.jpg" data-label="Exhibit A" data-reveal style="--d:0.00s"><img src="assets/img/photos/photo3-sm.jpg" alt="TigerHacks organizers in chef hats standing in front of the Greenwich Country Day School backdrop" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit A</span></a><a class="exhibit exhibit--tall" href="assets/img/photos/photo1.jpg" data-label="Exhibit B" data-reveal style="--d:0.06s"><img src="assets/img/photos/photo1-sm.jpg" alt="A vintage Omnibot 2000 robot wearing a chef&#x27;s hat, the TigerHacks mascot prop" loading="lazy" decoding="async" width="525" height="700"><span class="exhibit__tag">Exhibit B</span></a><a class="exhibit" href="assets/img/photos/photo4.jpg" data-label="Exhibit C" data-reveal style="--d:0.12s"><img src="assets/img/photos/photo4-sm.jpg" alt="Three award-winning students holding plaques beside the robot mascot" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit C</span></a><a class="exhibit" href="assets/img/photos/photo2.jpg" data-label="Exhibit D" data-reveal style="--d:0.18s"><img src="assets/img/photos/photo2-sm.jpg" alt="Organizers at the front of the library during the welcome presentation" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit D</span></a><a class="exhibit" href="assets/img/photos/photo5.jpg" data-label="Exhibit E" data-reveal style="--d:0.00s"><img src="assets/img/photos/photo5-sm.jpg" alt="Competitors from Rye Country Day School and the organizers lined up for a group photo" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit E</span></a><a class="exhibit" href="assets/img/photos/photo7.jpg" data-label="Exhibit F" data-reveal style="--d:0.06s"><img src="assets/img/photos/photo7-sm.jpg" alt="Three students holding their awards in front of the GCDS backdrop" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit F</span></a><a class="exhibit" href="assets/img/photos/photo6.jpg" data-label="Exhibit G" data-reveal style="--d:0.12s"><img src="assets/img/photos/photo6-sm.jpg" alt="Students arriving and setting up in the library before the competition" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit G</span></a><a class="exhibit" href="assets/img/photos/photo8.jpg" data-label="Exhibit H" data-reveal style="--d:0.18s"><img src="assets/img/photos/photo8-sm.jpg" alt="Three students with their award plaques in front of the GCDS backdrop" loading="lazy" decoding="async" width="700" height="525"><span class="exhibit__tag">Exhibit H</span></a>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Schools that have competed at TigerHacks">
+  <div class="container" style="margin-bottom:20px"><span class="eyebrow">Schools that have competed</span></div>
+  <div class="marquee"><div class="marquee__track" data-marquee><span class="marquee__item">Rye Country Day School</span><span class="marquee__item">Brunswick School</span><span class="marquee__item">Half Hollow Hills High School East</span><span class="marquee__item">Westhill High School</span><span class="marquee__item">Greens Farms Academy</span><span class="marquee__item">Greenwich High School</span><span class="marquee__item">St. Luke&#x27;s School</span><span class="marquee__item">Newtown High School</span></div></div>
+</section>
+
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <div class="section-head section-head--split">
+      <div style="display:grid;gap:20px">
+        <span class="eyebrow" data-scramble>The investigators</span>
+        <h2 class="display h2" id="team-title" data-reveal>Led <em>together.</em></h2>
+      </div>
+      <p class="lead" data-reveal style="--d:.1s">TigerHacks 2026 is led by Mary Chickering, Oliver Servedio, and Oliver Davis, students at Greenwich Country Day School, with support from GCDS faculty.</p>
+    </div>
+    <div class="leads">
+      <a class="lead-card lead-card--link" href="team/#mary-chickering" data-reveal style="--d:0.00s"><figure class="lead-card__photo"><img src="assets/img/team/mary-chickering.jpg" alt="Mary Chickering, co-lead of TigerHacks at Greenwich Country Day School" width="1600" height="1600" loading="lazy" decoding="async"><span class="exhibit__tag">File #01</span></figure><div class="lead-card__body"><h3 class="lead-card__name">Mary Chickering</h3><p class="lead-card__role">Co-Lead · TigerHacks 2026</p><p class="lead-card__school">Greenwich Country Day School</p></div></a><a class="lead-card lead-card--link" href="team/#oliver-servedio" data-reveal style="--d:0.08s"><figure class="lead-card__photo"><img src="assets/img/team/oliver-servedio.jpg" alt="Oliver Servedio, co-lead of TigerHacks at Greenwich Country Day School" width="500" height="500" loading="lazy" decoding="async"><span class="exhibit__tag">File #02</span></figure><div class="lead-card__body"><h3 class="lead-card__name">Oliver Servedio</h3><p class="lead-card__role">Co-Lead · TigerHacks 2026</p><p class="lead-card__school">Greenwich Country Day School</p></div></a><a class="lead-card lead-card--link" href="team/#oliver-davis" data-reveal style="--d:0.16s"><figure class="lead-card__photo"><img src="assets/img/team/oliver-davis.jpg" alt="Oliver Davis, co-lead of TigerHacks at Greenwich Country Day School" width="501" height="501" loading="lazy" decoding="async"><span class="exhibit__tag">File #03</span></figure><div class="lead-card__body"><h3 class="lead-card__name">Oliver Davis</h3><p class="lead-card__role">Co-Lead · TigerHacks 2026</p><p class="lead-card__school">Greenwich Country Day School</p></div></a>
+    </div>
+    <p style="margin-top:32px" data-reveal><a class="link-arrow" href="team/">Meet the full team, alumni, and faculty <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<section class="section section--paper" id="faq" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="section-head" style="margin-bottom:0">
+      <span class="eyebrow" data-scramble>Interrogation room</span>
+      <h2 class="display h2" id="faq-title" data-reveal>Questions, <em>answered.</em></h2>
+      <p class="lead" data-reveal style="--d:.1s">Everything you need to know before competition day.</p>
+    </div>
+    <div class="accordion" data-reveal>
+      <details open><summary>When is TigerHacks 2026?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>The date for TigerHacks 2026 has not been announced yet. It will be posted on this page as soon as it is confirmed.</p></div></details><details><summary>Where is the competition held?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>TigerHacks takes place at 257 Stanwich Road, Greenwich, CT 06830, hosted by Greenwich Country Day School.</p></div></details><details><summary>Which programming languages can we use?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Submissions and grading run on HackerRank. Accepted languages are C++, Java, and Python.</p></div></details><details><summary>What is the theme for TigerHacks 2026?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>TigerHacks 2026 is murder-mystery themed. Expect a case to crack, clues to follow, and a culprit to unmask.</p></div></details><details><summary>What resources are allowed during the competition?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Official language documentation and general tutorial sites are permitted. Q&amp;A forums such as StackOverflow are not, and no outside assistance is allowed from anyone not authorized to help — including other teams and chaperones.</p></div></details><details><summary>How is the competition scored?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Example input/output cases are provided, but grading uses hidden tests. A solution must pass all tests to count — there is no partial credit — and output must match exactly, including formatting, whitespace, and newlines. Ties are broken by the time taken to solve problems.</p></div></details><details><summary>How many laptops can a team bring?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>One laptop per team.</p></div></details><details><summary>How do we contact the organizers?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Email the TigerHacks team at <a href="mailto:tigerhacks@gcds.net">tigerhacks@gcds.net</a>.</p></div></details><details><summary>How can we prepare?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Work through the <a href="problems/">problem sets from 2023, 2024, and 2025</a> — solutions for each year are linked alongside them.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--orange cta" aria-labelledby="cta-title">
+  <svg class="cta__fingerprint" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">
+    <ellipse cx="100" cy="100" rx="20" ry="28"/><ellipse cx="100" cy="100" rx="34" ry="46" stroke-dasharray="60 8"/><ellipse cx="100" cy="100" rx="48" ry="64" stroke-dasharray="90 10 30 10"/><ellipse cx="100" cy="100" rx="62" ry="80" stroke-dasharray="120 14"/><ellipse cx="100" cy="100" rx="76" ry="96" stroke-dasharray="70 12 40 12"/><ellipse cx="100" cy="100" rx="8" ry="12"/>
+  </svg>
+  <div class="container" style="position:relative">
+    <span class="eyebrow" style="justify-content:center">TigerHacks 2026</span>
+    <h2 class="display cta__title" id="cta-title" style="margin-top:20px" data-reveal>The case is <em>open.</em></h2>
+    <p data-reveal style="--d:.1s">This year, TigerHacks is a murder mystery. Assemble your team, sharpen your algorithms, and register for TigerHacks 2026 at Greenwich Country Day School.</p>
+    <div class="cta__actions" data-reveal style="--d:.2s">
+      <a class="btn btn--dark" href="register/"><span>Register your team</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost" href="rules/"><span>Review the rules</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+  <button class="lightbox__btn lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></button>
+  <button class="lightbox__btn lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+</dialog>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="./" aria-label="TigerHacks home">
+          <span class="brand__mark"><img src="assets/img/tiger-192.png" alt="" width="30" height="30" loading="lazy"></span>
+          <span class="brand__name">TigerHacks</span>
+        </a>
+        <p>A high-school coding competition, by high-schoolers. Led by Mary Chickering, Oliver Servedio, and Oliver Davis at Greenwich Country Day School in Greenwich, Connecticut.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Competition</h4>
+        <ul>
+          <li><a href="register/">Register</a></li>
+          <li><a href="rules/">Rules</a></li>
+          <li><a href="./#schedule">Schedule</a></li>
+          <li><a href="./#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="problems/">Past problems</a></li>
+          <li><a href="results/">Results</a></li>
+          <li><a href="team/">The Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <address>Greenwich Country Day School<br>257 Stanwich Road<br>Greenwich, CT 06830</address>
+        <p style="margin-top:14px"><a href="mailto:tigerhacks@gcds.net">tigerhacks@gcds.net</a></p>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true">Tiger<em>Hacks</em></div>
+    <div class="footer-bottom">
+      <span>© <span data-year-now>2026</span> TigerHacks · Greenwich Country Day School</span>
+      <span>Student-run computer science competition · Greenwich, CT</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js" defer></script>
+</body>
 </html>

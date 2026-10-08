@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Past Problems &amp; Solutions | TigerHacks 2023–2025</title>
+<meta name="description" content="Practice for TigerHacks with every previous problem set from 2023, 2024, and 2025, plus solutions on GitHub. A high-school coding competition at Greenwich Country Day School.">
+<link rel="canonical" href="https://tiger-hacks.net/problems/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="TigerHacks, Greenwich Country Day School">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TigerHacks">
+<meta property="og:title" content="Past Problems &amp; Solutions | TigerHacks 2023–2025">
+<meta property="og:description" content="Practice for TigerHacks with every previous problem set from 2023, 2024, and 2025, plus solutions on GitHub. A high-school coding competition at Greenwich Country Day School.">
+<meta property="og:url" content="https://tiger-hacks.net/problems/">
+<meta property="og:image" content="https://tiger-hacks.net/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TigerHacks 2026 — a high-school coding competition at Greenwich Country Day School">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Past Problems &amp; Solutions | TigerHacks 2023–2025">
+<meta name="twitter:description" content="Practice for TigerHacks with every previous problem set from 2023, 2024, and 2025, plus solutions on GitHub. A high-school coding competition at Greenwich Country Day School.">
+<meta name="twitter:image" content="https://tiger-hacks.net/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preload" href="../assets/fonts/inter-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/playfair-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://tiger-hacks.net/#org",
+   "name": "TigerHacks",
+   "alternateName": [
+    "Tiger Hacks",
+    "TigerHacks GCDS",
+    "GCDS TigerHacks"
+   ],
+   "url": "https://tiger-hacks.net/",
+   "logo": "https://tiger-hacks.net/assets/img/tiger-512.png",
+   "email": "tigerhacks@gcds.net",
+   "description": "TigerHacks is a student-led high-school computer science and coding competition hosted at Greenwich Country Day School (GCDS) in Greenwich, Connecticut.",
+   "parentOrganization": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School",
+    "alternateName": "GCDS",
+    "address": {
+     "@type": "PostalAddress",
+     "streetAddress": "257 Stanwich Road",
+     "addressLocality": "Greenwich",
+     "addressRegion": "CT",
+     "postalCode": "06830",
+     "addressCountry": "US"
+    }
+   },
+   "member": [
+    {
+     "@id": "https://tiger-hacks.net/team/#mary-chickering"
+    },
+    {
+     "@id": "https://tiger-hacks.net/team/#oliver-servedio"
+    },
+    {
+     "@id": "https://tiger-hacks.net/team/#oliver-davis"
+    },
+    {
+     "@type": "Person",
+     "name": "Gordie Campbell",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Doug Melilo",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Leon Martinez",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Dr. Gregory Stein",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Regi Parron",
+     "jobTitle": "Faculty"
+    },
+    {
+     "@type": "Person",
+     "name": "Samantha Marciano",
+     "jobTitle": "Faculty"
+    }
+   ],
+   "alumni": [
+    {
+     "@type": "Person",
+     "name": "Imran Iftikar"
+    },
+    {
+     "@type": "Person",
+     "name": "Abraham Milgram"
+    },
+    {
+     "@type": "Person",
+     "name": "Harrison Servedio"
+    },
+    {
+     "@type": "Person",
+     "name": "Andy Pauley"
+    },
+    {
+     "@type": "Person",
+     "name": "Henry Santangelo"
+    },
+    {
+     "@type": "Person",
+     "name": "Julian Toub"
+    },
+    {
+     "@type": "Person",
+     "name": "Katie Benicasa"
+    },
+    {
+     "@type": "Person",
+     "name": "Asher Rosen"
+    },
+    {
+     "@type": "Person",
+     "name": "Irhan Iftikar"
+    },
+    {
+     "@type": "Person",
+     "name": "Zachary Bostock"
+    },
+    {
+     "@type": "Person",
+     "name": "Charlie Mononey"
+    }
+   ],
+   "sameAs": [
+    "https://github.com/Henry-Santa/tigerhacks",
+    "https://github.com/harrison-servedio/tigerhacks-2024",
+    "https://github.com/harrison-servedio/tigerHacks-2023"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#mary-chickering",
+   "name": "Mary Chickering",
+   "url": "https://tiger-hacks.net/team/#mary-chickering",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Mary Chickering is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/mary-chickering.jpg",
+    "width": 1600,
+    "height": 1600,
+    "caption": "Mary Chickering, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#oliver-servedio",
+   "name": "Oliver Servedio",
+   "url": "https://tiger-hacks.net/team/#oliver-servedio",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Oliver Servedio is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/oliver-servedio.jpg",
+    "width": 500,
+    "height": 500,
+    "caption": "Oliver Servedio, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tiger-hacks.net/team/#oliver-davis",
+   "name": "Oliver Davis",
+   "url": "https://tiger-hacks.net/team/#oliver-davis",
+   "jobTitle": "Co-Lead, TigerHacks",
+   "memberOf": {
+    "@id": "https://tiger-hacks.net/#org"
+   },
+   "affiliation": {
+    "@type": "EducationalOrganization",
+    "name": "Greenwich Country Day School"
+   },
+   "description": "Oliver Davis is a co-lead of TigerHacks, the student-run high-school coding competition at Greenwich Country Day School in Greenwich, Connecticut.",
+   "image": {
+    "@type": "ImageObject",
+    "url": "https://tiger-hacks.net/assets/img/team/oliver-davis.jpg",
+    "width": 501,
+    "height": 501,
+    "caption": "Oliver Davis, co-lead of TigerHacks"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://tiger-hacks.net/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Past Problems",
+     "item": "https://tiger-hacks.net/problems/"
+    }
+   ]
+  },
+  {
+   "@type": "CollectionPage",
+   "name": "TigerHacks Prior Questions and Solutions",
+   "url": "https://tiger-hacks.net/problems/",
+   "hasPart": [
+    {
+     "@type": "LearningResource",
+     "name": "TigerHacks 2025 problem set",
+     "url": "https://tiger-hacks.net/pset2025.pdf",
+     "encodingFormat": "application/pdf",
+     "learningResourceType": "Problem set"
+    },
+    {
+     "@type": "LearningResource",
+     "name": "TigerHacks 2024 problem set",
+     "url": "https://tiger-hacks.net/pset2024.pdf",
+     "encodingFormat": "application/pdf",
+     "learningResourceType": "Problem set"
+    },
+    {
+     "@type": "LearningResource",
+     "name": "TigerHacks 2023 problem set",
+     "url": "https://tiger-hacks.net/pset2023.pdf",
+     "encodingFormat": "application/pdf",
+     "learningResourceType": "Problem set"
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header is-solid">
+  <div class="container header-inner">
+    <a class="brand" href="../" aria-label="TigerHacks home">
+      <span class="brand__mark"><img src="../assets/img/tiger-192.png" alt="" width="30" height="30"></span>
+      <span class="brand__name">TigerHacks</span>
+      <span class="brand__year">2026</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list"><li><a class="nav__link" href="../">Home</a></li><li><a class="nav__link" href="../problems/" aria-current="page">Past Problems</a></li><li><a class="nav__link" href="../results/">Results</a></li><li><a class="nav__link" href="../rules/">Rules</a></li><li><a class="nav__link" href="../team/">The Team</a></li></ul>
+    </nav>
+    <a class="btn btn--primary btn--sm header-cta" href="../register/"><span>Register</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <ul class="mobile-menu__list"><li><a class="mobile-menu__link" href="../"><small>01</small>Home</a></li><li><a class="mobile-menu__link" href="../problems/" aria-current="page"><small>02</small>Past Problems</a></li><li><a class="mobile-menu__link" href="../results/"><small>03</small>Results</a></li><li><a class="mobile-menu__link" href="../rules/"><small>04</small>Rules</a></li><li><a class="mobile-menu__link" href="../team/"><small>05</small>The Team</a></li><li><a class="mobile-menu__link" href="../register/"><small>06</small>Register</a></li></ul>
+  <div class="mobile-menu__foot">
+    <span>TigerHacks 2026 · Greenwich Country Day School</span>
+    <span>257 Stanwich Road, Greenwich, CT 06830</span>
+  </div>
+</div>
+<main id="main">
+<section class="page-hero">
+  <div class="hero__bg" aria-hidden="true"><div class="hero__grid"></div></div>
+  <div class="container page-hero__inner">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li aria-current="page">Past Problems</li></ol></nav>
+    <span class="eyebrow" data-scramble>Cold case archive</span>
+    <h1 class="display">Prior <em>questions.</em></h1>
+    <p class="lead">Every TigerHacks problem set we have released, with solutions. The best way to prepare is to solve these under time pressure.</p>
+  </div>
+</section>
+<section class="section section--tight"><div class="container"><div class="dossiers">
+      <article class="dossier" id="y2025" data-reveal>
+        <div class="dossier__year"><span>Case file</span>2025</div>
+        <div>
+          <h2>Welcome to the Farm</h2>
+          <p>The 2025 problem set, from the competition held on November 15, 2025.</p>
+          <div class="dossier__actions">
+            <a class="btn btn--primary btn--sm" href="../pset2025.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Questions (PDF)</span></a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/Henry-Santa/tigerhacks" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>Solutions on GitHub</span></a>
+          </div>
+          <details data-pdf="../pset2025.pdf" data-title="TigerHacks 2025 problem set" open>
+            <summary>Preview the 2025 questions</summary>
+            <div class="pdf-frame"><iframe src="../pset2025.pdf" title="TigerHacks 2025 problem set" loading="lazy"></iframe></div>
+          </details>
+        </div>
+      </article>
+      <article class="dossier" id="y2024" data-reveal>
+        <div class="dossier__year"><span>Case file</span>2024</div>
+        <div>
+          <h2>2024 Problem Set</h2>
+          <p>The full problem set from TigerHacks 2024.</p>
+          <div class="dossier__actions">
+            <a class="btn btn--primary btn--sm" href="../pset2024.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Questions (PDF)</span></a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/harrison-servedio/tigerhacks-2024/tree/main" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>Solutions on GitHub</span></a>
+          </div>
+          <details data-pdf="../pset2024.pdf" data-title="TigerHacks 2024 problem set">
+            <summary>Preview the 2024 questions</summary>
+            
+          </details>
+        </div>
+      </article>
+      <article class="dossier" id="y2023" data-reveal>
+        <div class="dossier__year"><span>Case file</span>2023</div>
+        <div>
+          <h2>2023 Problem Set</h2>
+          <p>The problem set from the first TigerHacks competition.</p>
+          <div class="dossier__actions">
+            <a class="btn btn--primary btn--sm" href="../pset2023.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><span>Questions (PDF)</span></a>
+            <a class="btn btn--ghost btn--sm" href="https://github.com/harrison-servedio/tigerHacks-2023" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><span>Python solutions on GitHub</span></a>
+          </div>
+          <details data-pdf="../pset2023.pdf" data-title="TigerHacks 2023 problem set">
+            <summary>Preview the 2023 questions</summary>
+            
+          </details>
+        </div>
+      </article>
+    </div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../" aria-label="TigerHacks home">
+          <span class="brand__mark"><img src="../assets/img/tiger-192.png" alt="" width="30" height="30" loading="lazy"></span>
+          <span class="brand__name">TigerHacks</span>
+        </a>
+        <p>A high-school coding competition, by high-schoolers. Led by Mary Chickering, Oliver Servedio, and Oliver Davis at Greenwich Country Day School in Greenwich, Connecticut.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Competition</h4>
+        <ul>
+          <li><a href="../register/">Register</a></li>
+          <li><a href="../rules/">Rules</a></li>
+          <li><a href="../#schedule">Schedule</a></li>
+          <li><a href="../#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="../problems/">Past problems</a></li>
+          <li><a href="../results/">Results</a></li>
+          <li><a href="../team/">The Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <address>Greenwich Country Day School<br>257 Stanwich Road<br>Greenwich, CT 06830</address>
+        <p style="margin-top:14px"><a href="mailto:tigerhacks@gcds.net">tigerhacks@gcds.net</a></p>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true">Tiger<em>Hacks</em></div>
+    <div class="footer-bottom">
+      <span>© <span data-year-now>2026</span> TigerHacks · Greenwich Country Day School</span>
+      <span>Student-run computer science competition · Greenwich, CT</span>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
